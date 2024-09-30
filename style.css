@@ -30,14 +30,14 @@ body{
 }
 
 .buscar-box.ativar{
-    width: 400px;
+    width: 450px;
 }
 
 
 .buscar-box .lupa-buscar, .buscar-box .btn-fechar{
-    min-width: 50px;
-    height: 50px;
-    display: flex;
+    min-width: 60px;
+    height: 60px;
+    display: block;
     align-items: center;
     justify-content: center;
     cursor: pointer;
@@ -49,7 +49,7 @@ body{
 }
 
 .buscar-box .lupa-buscar i{
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .buscar-box .input-buscar{
@@ -336,9 +336,9 @@ button{
     display: block;
 }
 
-@media (max-width: 350px){
+@media (max-width: 600px){
     .grid2{
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
     .grid2 > div:nth-child(n + 4){
         display: block;
@@ -389,11 +389,13 @@ button:hover{
 @media screen and (max-width: 800px){
     /*imagem, portal e ouvidoraia*/
    .header{
+     
         flex-direction: column;
    }
-   .menu a{
-        text-align: center; 
-        align-items: center;
+   .menu{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50);
    }
    
     /*menu2 e 3 de clicar*/
