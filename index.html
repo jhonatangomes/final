@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEMMA</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        ul{
+            display: flex;
+        }
+        header{
+            display: flex;
+            width: 100%;
+        }
+        .box{
+            padding-right: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        .box1{
+            display: inline-block;
+        }
+        body{
+            margin: 0;
+        }
+        main{ 
+            background-color: rgb(255, 255, 255);
+            display: block;
+            justify-items: center;
+            justify-content: center;
+            align-items: center;
+            max-width: 1000px;
+            min-width: 300px;
+            margin: 0 auto;
+        }
+
+
+        .texto{
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2rem;
+            margin: 30px;
+            
+        }
+        img{
+            width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+<body>
+    <header class="header">    
+        <div class="logo">
+            <picture>
+                <source media="(max-width:700px )" srcset="logo-ambiente-p.png">
+                <source media="(max-width:850px)" srcset="logo-ambiente2.png">
+                <img src="logo-ambiente1-g.png" alt="logo-semma da secretaria">
+            <picture>
+        </div>
+        
+        <nav>
+            <ul class="menu">
+                <li>
+                    <a href="https://transparenciamunicipalaam.org.br/p/envira" target="_blank">PORTAL DE TRANSPARÊNCIA</a></li>
+                <li>
+                    <a href="ouvidoria.html" class="ouvidoria">OUVIDORIA</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="botton-header">
+        <nav  class="nav-bar">
+            <div class="box">
+                <div class="buscar-box">
+                    <div class="lupa-buscar">
+                        <i class="bi bi-search"></i>
+                    </div>
+                    <div class="input-buscar">
+                       <input type="text" name="" id="" placeholder="Faça uma busca">
+                    </div>
+                        <div class="btn-fechar">
+                        <i class="bi bi-x-circle"></i>
+                    </div>
+                </div>
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="menu.png"></button>
+                </div>
+            </div>
+        </nav>
+
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item">
+                        <a href="#">PUBLICAÇÕES</a>
+                    </li>
+                    <li class="nav-item">
+                        <div>                          
+                            <a href="tranparencia.html">ACESSO À INFORMAÇÃO</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    </section>  
+    <!--JavaScript-->
+    <script src="script.js"></script>
+
+    <main>
+        <div class="botoes">
+            <div  class="menu2">
+                <nav  class="botoes-nav">
+                    <div class="face">
+                        <ul>
+                            <li class="menu2-hover">
+                                <a href="#">INSTITUCIONAL</a>
+                                <div class="menu2-drop">
+                                    <a href="quem-somos.html">QUEM SOMOS?</a>
+                                    <a href="civil.html">DEFESA CIVIL DO MUNICÍPIO</a>
+                                    <a href="ORGANOGRAMA.pdf" target="_blank">ORGANOGRAMA</a>
+                                    <a href="#">LEIS</a>
+                                    <a href="https://www.ipaam.am.gov.br/" target="_blank">IPAAM</a>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <a href="#">PUBLICAÇÕES</a>
+                            </li>
+                            <li class="menu2-hover">
+                                <div class="n-item">
+                                    <a href="#">SERVIÇOS</a>
+                                    <div class="menu2-dro">
+                                            <a href="arborização.html">ARBORIZAÇÃO</a>
+                                            <a href="arquivo/REQUERIMENTO PARA CORTE E PODA.pdf" download="REQUERIMENTO PARA CORTE E PORDA" target="_blank">AUTORIZAÇÕES DE PODAS</a>
+                                            <a href="arquivo/REQUERIMENTO PARA CORTE E PODA.pdf" download="REQUERIMENTO PARA CORTE E PORDA" target="_blank">AUTORIZAÇÕES DE REMOÇÃO DE ÁRVORES</a>
+                                            <a href="transporte.html">GUIA DE TRANSPORTE DE MADEIRA</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <a href="#">ACESSO À INFORMAÇÃO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+        <!--Grid arquivos diferente/ Defesa Civil-->
+        <h1>DEFESA CIVIL</h1>
+        <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, provident sed! Soluta aperiam fugiat, pariatur sed delectus, sint aliquam beatae repudiandae exercitationem dolore tempore laborum, culpa aliquid porro quae praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iste molestiae, accusamus voluptas, quae amet mollitia similique architecto aspernatur error eaque iusto reiciendis natus ad voluptatum quaerat itaque. Accusantium, corrupti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, ipsam excepturi ullam numquam sint unde quibusdam cum quas corrupti obcaecati cumque voluptas ea placeat necessitatibus nobis, quidem in a earum.</p>
+        <section class="grid1">
+            <div class="grid1-item">
+                <picture>
+                    <source media="(max-width:700px)" srcset="imagem/ambiente-site/ambiente4-p.png">
+                    <img src="imagem/ambiente-site/ambiente4.png" alt="logo-semma da secretaria">
+                    <p>FIG. 01. Trecho do rio Tarauacá, em período de estiagem.
+                    <br>                           
+                    FONTE: </p>
+                </picture>
+            </div>
+    
+            <div class="grid1-item">
+                <picture>
+                    <source media="(max-width:700px)" srcset="imagem/defsa-cilvil-site/defesa-civil3-p.png">
+                    <img src="imagem/defsa-cilvil-site/defesa-civil3.png" alt="logo-semma da secretaria">
+                    <p>FIG. 05. Equipe da defesa Civil nos Portos dos Ribeirinho em Envira - AM, no período de vazante dos rios.
+                    <br>
+                    FONTE:</p>
+                </picture>
+            </div>
+            <div class="grid1-item"> 
+                <picture>
+                    <source media="(max-width:700px)" srcset="imagem/defsa-cilvil-site/defesa-civil2-p.png">
+                    <img src="imagem/defsa-cilvil-site/defesa-civil2.png" alt="logo-semma da secretaria">
+                    <p>FIG. 07. Defesa Civil, na operação estiagem, nas comunidades ribeirinhas, fazendo cadastros.
+                    <br>
+                    FONTE:</p>
+                </picture>
+            </div>
+
+        </section>
+
+        <!--Grid arquivos diferente/ meio ambiente</h1>-->
+        <h1>SECRETARIA MUNICIPAL DE MEIO AMBIENTE</h1>
+        <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, provident sed! Soluta aperiam fugiat, pariatur sed delectus, sint aliquam beatae repudiandae exercitationem dolore tempore laborum, culpa aliquid porro quae praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iste molestiae, accusamus voluptas, quae amet mollitia similique architecto aspernatur error eaque iusto reiciendis natus ad voluptatum quaerat itaque. Accusantium, corrupti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, ipsam excepturi ullam numquam sint unde quibusdam cum quas corrupti obcaecati cumque voluptas ea placeat necessitatibus nobis, quidem in a earum.</p>
+        <section class="grid2">
+            <div>
+                <picture>
+                    <source media="(max-width:700px)" srcset="imagem/defsa-cilvil-site/defesa-civil1-p.png">
+                    <img src="imagem/ambiente-site/ambiente1.png" alt="logo-semma da secretaria">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, veniam? Laudantium id veritatis ab vero recusandae tenetur minus debitis molestias esse, laborum sunt sit a hic, dolorum iste autem perferendis.</p>
+                </picture>
+            </div>
+    
+            <div>
+                <picture>
+                    <source media="(max-width:700px)" srcset="imagem/defsa-cilvil-site/defesa-civil1-p.png">
+                    <img src="imagem/ambiente-site/ambiente1.png" alt="logo-semma da secretaria">
+                    <p>Legenda</p>
+                </picture>
+            </div>
+            <div>
+                <picture>
+                    <source media="(max-width:700px)" srcset="imagem/defsa-cilvil-site/defesa-civil1-p.png">
+                    <img src="imagem/ambiente-site/ambiente1.png" alt="logo-semma da secretaria">
+                    <p>Legenda</p>
+                </picture>
+            </div>
+            <div>
+                <picture>
+                    <source media="(max-width:700px)" srcset="imagem/defsa-cilvil-site/defesa-civil1-p.png">
+                    <img src="imagem/ambiente-site/ambiente1.png" alt="logo-semma da secretaria">
+                    <p>Legenda</p>
+                </picture>
+            </div>
+            <div>
+                <picture>
+                    <source media="(max-width:700px)" srcset="imagem/defsa-cilvil-site/defesa-civil1-p.png">
+                    <img src="imagem/ambiente-site/ambiente1.png" alt="logo-semma da secretaria">
+                    <p>Legenda</p>
+                </picture>
+            </div>
+    
+            <div>
+                <picture>
+                    <source media="(max-width:700px)" srcset="imagem/defsa-cilvil-site/defesa-civil1-p.png">
+                    <img src="imagem/ambiente-site/ambiente1.png" alt="logo-semma da secretaria">
+                    <p>Legenda</p>
+                </picture>
+            </div>
+            <div>
+                <picture>
+                    <source media="(max-width:700px)" srcset="imagem/defsa-cilvil-site/defesa-civil1-p.png">
+                    <img src="imagem/ambiente-site/ambiente1.png" alt="logo-semma da secretaria">
+                    <p>Legenda</p>
+                </picture>
+            </div>
+            <div>
+                <picture>
+                    <source media="(max-width:700px)" srcset="imagem/defsa-cilvil-site/defesa-civil1-p.png">
+                    <img src="imagem/ambiente-site/ambiente1.png" alt="logo-semma da secretaria">
+                    <p>Legenda</p>
+                </picture>
+            </div>
+            <div>
+                <picture>
+                    <source media="(max-width:700px)" srcset="imagem/defsa-cilvil-site/defesa-civil1-p.png">
+                    <img src="imagem/ambiente-site/ambiente2.png" alt="logo-semma da secretaria">
+                    <p>Legenda</p>
+                </picture>
+            </div>
+    
+            
+            <div class="anuncio">
+                <picture>
+                    <source media="(max-width:700px)" srcset="imagem/defsa-cilvil-site/defesa-civil3-p.png">
+                    <img src="imagem/ambiente-site/ambiente2.png" alt="logo-semma da secretaria">
+                    <p>FIG. 06. Posto flutuante mundial, totalmente no seco, por consequência da forte estiagem que sofre o rio Tarauacá.
+                    <br>
+                    FONTE: Secretaria Municipal de Meio Ambiente/Defesa Civil</p>
+                </picture>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="div-botton">
+            <button><a href="#">Telefone Para Denúncia</a></button>
+            <button><a href="#">E-mail Para Denúncia</a></button>
+        </div>
+        <div class="texto-footer">
+            <h2>SEMMA</h2>
+            <p>secretaria Municipal de Meio ambiente</p>
+            <p>CEP: 69.870-000</p>
+            <p>Atendimento: 08:00h às 14:00h</p>
+        </div>
+    </footer>
+</body>
+</html>
