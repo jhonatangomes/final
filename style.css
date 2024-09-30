@@ -392,11 +392,6 @@ button:hover{
      
         flex-direction: column;
    }
-   .menu{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50);
-   }
    
     /*menu2 e 3 de clicar*/
     .botoes{
