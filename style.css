@@ -15,61 +15,58 @@ body{
     padding-left: 10%;
 }
 
-/*Barra de busca*/
 
 
+/*Barra de busca */
 
-.buscar-box{
-    width: 60px;
-    height: 60px;
-    overflow: hidden;
+.search-box{
+    background-color: rgb(19, 53, 48);
+    height: 40px;
+    padding: 10px;
+    border-radius: 40px;
     display: flex;
     justify-content: space-between;
-    position: relative;
-    transition: .3s;
-}
-
-.buscar-box.ativar{
-    width: 450px;
-}
-
-
-.buscar-box .lupa-buscar, .buscar-box .btn-fechar{
-    min-width: 60px;
-    height: 60px;
-    display: block;
     align-items: center;
+}
+
+
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: .5s;
+
+}
+::-webkit-input-placeholder{
+    color: white;
+}
+.search-btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(19, 53, 48);
+    display: flex;
     justify-content: center;
-    cursor: pointer;
+    align-items: center;
+    transition: .5s;
+}
+.search-box:hover > .search-txt{
+    width: 240px;
+    padding: 0 6px;
+
 }
 
-.buscar-box .btn-fechar i{
-    font-size: 25px;
-    margin-left: 15px;
-}
-
-.buscar-box .lupa-buscar i{
-    font-size: 25px;
-}
-
-.buscar-box .input-buscar{
-    position: absolute;
-    left: 80px;
-    width: calc(100% - 120%);
-    height: 100%;
-    line-height: 80px;
-}
-
-.buscar-box .input-buscar input{
-    border: 0;
-    outline: 0;
-    font-size: 20px;
+.search-box:hover > .search-btn {
+    background: white;
 }
 
 
-
-
-/*Barra de busca*/
+/*Barra de busca */
 
 
 
@@ -101,7 +98,9 @@ h1 {
 
 .menu{
     display: flex;
+    margin-right: 50px;
     margin-bottom: 25px;
+    align-items: center;
 }
 
 .menu li{
@@ -115,15 +114,16 @@ h1 {
     padding: 8px;
 }
 .ouvidoria{
-    display: flex;
-    margin-right: 100px;
+    display: block;
+    margin-right: 10px;
 }
 
-/*barra de menu2*/
+/*barra de menu2 / pesquisa*/
 
 .botton-header{
     background-color: rgb(21, 174, 115);
 }
+
 .botton-header ul{
     display: flex;
     align-items: center;
@@ -151,33 +151,6 @@ h1 {
     position: relative;
 }
 /*barra de menu2*/
-
-
-
-/*menu2*/
-.menu2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-}
-
-
-.menu2 li{
-    margin-left: 15px;
-    
-}
-
-
-.menu2 li a{
-    display: block;
-    padding: 8px;
-}
-.ouvidoria{
-    margin-right: 100px;
-}
-
 
 .botoes{
     background-color: rgb(171, 238, 212);
@@ -261,7 +234,7 @@ button{
 
 
 
-/*menu de clicar
+/*menu de clicar*/
 button{
     padding: 0;
 }
@@ -272,7 +245,6 @@ button{
 .mobile-menu{
    display: none;
 }
-*/
 
 
 
@@ -389,9 +361,15 @@ button:hover{
 @media screen and (max-width: 800px){
     /*imagem, portal e ouvidoraia*/
    .header{
-     
         flex-direction: column;
    }
+   
+   
+ /*lupa*/
+ .box{
+    display: flex;
+    padding-right: 0px;
+}
    
     /*menu2 e 3 de clicar*/
     .botoes{
@@ -431,6 +409,7 @@ button:hover{
         background-color: transparent;
         border: none;
         cursor: pointer;
+        margin: 0;
     }
     .mobile-menu ul{
         display: flex;
@@ -463,8 +442,6 @@ button:hover{
     }
 
 
-
-
     /*footer ou rodapé*/
 
     .footer{
@@ -481,4 +458,5 @@ button:hover{
    h2{
     margin: 0;
    }
+
 }

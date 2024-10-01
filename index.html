@@ -14,17 +14,15 @@
         }
         header{
             display: flex;
-            width: 100%;
         }
         .box{
+            padding: 5px;
             padding-right: 50px;
             display: flex;
             flex-direction: row;
             justify-content: flex-end;
         }
-        .box1{
-            display: inline-block;
-        }
+
         body{
             margin: 0;
         }
@@ -38,8 +36,7 @@
             min-width: 300px;
             margin: 0 auto;
         }
-
-
+         
         .texto{
             text-align: justify;
             font-family: Arial, Helvetica, sans-serif;
@@ -60,7 +57,7 @@
         <div class="logo">
             <picture>
                 <source media="(max-width:700px )" srcset="logo-ambiente-p.png">
-                <source media="(max-width:850px)" srcset="logo-ambiente2.png">
+                <source media="(max-width:800px)" srcset="logo-ambiente2.png">
                 <img src="logo-ambiente1-g.png" alt="logo-semma da secretaria">
             <picture>
         </div>
@@ -68,32 +65,26 @@
         <nav>
             <ul class="menu">
                 <li>
-                    <a href="https://transparenciamunicipalaam.org.br/p/envira" target="_blank">PORTAL DE TRANSPARÊNCIA</a></li>
-                <li>
                     <a href="ouvidoria.html" class="ouvidoria">OUVIDORIA</a>
                 </li>
+                <li>
+                    <a href="https://transparenciamunicipalaam.org.br/p/envira" target="_blank">PORTAL DE TRANSPARÊNCIA</a>
+                </li>
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="menu.png" width="50px"></button>
+                </div>
             </ul>
         </nav>
     </header>
 
     <section class="botton-header">
-        <nav  class="nav-bar">
-            <div class="box">
-                <div class="buscar-box">
-                    <div class="lupa-buscar">
-                        <i class="bi bi-search"></i>
-                    </div>
-                    <div class="input-buscar">
-                       <input type="text" name="" id="" placeholder="Faça uma busca">
-                    </div>
-                        <div class="btn-fechar">
-                        <i class="bi bi-x-circle"></i>
-                    </div>
+        <nav class="box">
+                <div class="search-box">
+                    <input type="text" class="search-txt" placeholder="Pesquisar">
+                    <a href="#" class="search-btn">
+                        <img src="lupa.png" alt="lupa" height="30px" width="30px">
+                    </a>
                 </div>
-                <div class="mobile-menu-icon">
-                    <button onclick="menuShow()"><img class="icon" src="menu.png"></button>
-                </div>
-            </div>
         </nav>
 
             <div class="mobile-menu">
@@ -157,7 +148,7 @@
         <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut, provident sed! Soluta aperiam fugiat, pariatur sed delectus, sint aliquam beatae repudiandae exercitationem dolore tempore laborum, culpa aliquid porro quae praesentium! Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima iste molestiae, accusamus voluptas, quae amet mollitia similique architecto aspernatur error eaque iusto reiciendis natus ad voluptatum quaerat itaque. Accusantium, corrupti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, ipsam excepturi ullam numquam sint unde quibusdam cum quas corrupti obcaecati cumque voluptas ea placeat necessitatibus nobis, quidem in a earum.</p>
         <section class="grid1">
             <div class="grid1-item">
-                <picture>
+                <picture class="imagens">
                     <source media="(max-width:700px)" srcset="imagem/ambiente-site/ambiente4-p.png">
                     <img src="imagem/ambiente-site/ambiente4.png" alt="logo-semma da secretaria">
                     <p>FIG. 01. Trecho do rio Tarauacá, em período de estiagem.
