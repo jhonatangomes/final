@@ -374,8 +374,12 @@ button:hover{
     /*menu2 e 3 de clicar*/
     .botoes{
         display: flex;
-    }
+    } 
 
+    .menu{
+        text-align: center;
+    }
+   
     .n-item{
         display: flex;   
     }
