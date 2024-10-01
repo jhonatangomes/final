@@ -281,6 +281,9 @@ button{
     align-self: end;
 }
 
+.foto{
+    width: 100%;
+}
 
 
 
@@ -308,7 +311,7 @@ button{
     display: block;
 }
 
-@media (max-width: 600px){
+@media (max-width: 900px){
     .grid2{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -319,6 +322,7 @@ button{
         grid-column: auto;
         grid-row: auto;
     }
+    
 
 }
 
