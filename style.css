@@ -219,6 +219,7 @@ h1 {
     height: 290px;
 }
 
+
 button{
     padding: 0;
 }
@@ -245,6 +246,40 @@ button{
 .mobile-menu{
    display: none;
 }
+
+
+/*OUVIDORIA*/
+
+.mobile-menu1{
+   display: none;
+}
+
+.nav-item1{
+    display: none;   
+}   
+
+.mobile-menu-icon1{
+    display: block;
+}
+.mobile-menu-icon1 button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+}
+.mobile-menu1 ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+
+}
+
+.mobile-menu1 .nav-item1{
+    display: block;
+    padding-top: 1.2rem;
+}
+
 
 
 
