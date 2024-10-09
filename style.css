@@ -498,5 +498,9 @@ button:hover{
    h2{
     margin: 0;
    }
+   .whats{
+    bottom: 30px;
+    right: 30px;
+}
 
 }
