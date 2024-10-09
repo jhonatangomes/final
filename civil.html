@@ -4,68 +4,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SEMMA</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        ul{
+            display: flex;
+        }
+        header{
+            display: flex;
+        }
+        .box{
+            padding: 5px;
+            padding-right: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+
+        body{
+            margin: 0;
+        }
+        main{ 
+            background-color: rgb(255, 255, 255);
+            display: block;
+            justify-items: center;
+            justify-content: center;
+            align-items: center;
+            max-width: 1000px;
+            min-width: 300px;
+            margin: 0 auto;
+        }
+         
+        .texto{
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2rem;
+            margin: 30px;
+            
+        }
+        img{
+            align-items: center;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+
 </head>
 <body>
-    <header>    
-        <img src="imagem/logo-envira.jpg" alt="">
+    <header class="header">    
+        <div class="logo">
+            <picture>
+                <source media="(max-width:700px )" srcset="logo-ambiente-p.png">
+                <source media="(max-width:800px)" srcset="logo-ambiente2.png">
+                <img src="logo-ambiente1-g.png" alt="logo-semma da secretaria">
+            <picture>
+        </div>
+        
         <nav>
-            <div>
-                <ul>
-                    <li><a href="tranparencia.html">PORTAL DE TRANSPARÊNCIA</a></li>
-                    <li><a href="ouvidoria.html">OUVIDORIA</a></li>
-                </ul>
-            </div>
+            <ul class="menu">
+                <div class="mobile-menu-icon1">
+                    <a href="#" onclick="menuShow1()" >OUVIDORIA</a>
+                </div>
+
+                <li>
+                    <a href="https://transparenciamunicipalaam.org.br/p/envira" target="_blank">PORTAL DE TRANSPARÊNCIA</a>
+                </li>
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="menu.png" height="50px" width="50px"></button>
+                </div>
+            </ul>
         </nav>
     </header>
-    <section>
-        <div>
+
+    <section class="botton-header">
+        <nav class="box">
+                <div class="search-box">
+                    <input type="text" class="search-txt" placeholder="Pesquisar">
+                    <a href="#" class="search-btn">
+                        <img src="lupa.png" alt="lupa" height="30px" width="30px">
+                    </a>
+                </div>
+        </nav>
+        <div class="mobile-menu1">
             <ul>
-                <li>
-                    <a href="index.html">INÍCIO</a>
+                <li class="nav-item1">
+                    <img src="whatsapp-logo.png" alt="whatsapp-logo" width="50px">
                 </li>
-            
-                <li>
-                    <a href="institucional.html">INSTITUCIONAL</a>
-
-                    <div class="drop">
-                        <a href="quem-somos.html">QUEM SOMOS?</a>
-                        <a href="civil.html">DEFESA CIVIL DO MUNICÍPIO</a>
-                        <a href="onograma.html">ONOGRAMA</a>
-                        <a href="#">LEIS</a>
-                        <a href="https://www.ipaam.am.gov.br/" target="_blank">IPAAM</a>                    
-                    </div>                        
-                </li>
-
-                <li>
-                    <a href="#">PUBLICAÇÕES</a>
-                </li>
-
-                <li>
-                    <a href="serviço.html">SERVIÇOS</a>
-                    <div>
-                        <a href="arborização.html">ARBORIZAÇÃO</a>
-
-                        <a href="arquivo/REQUERIMENTO PARA CORTE E PODA.pdf" download="REQUERIMENTO PARA CORTE E PORDA" target="_blank">AUTORIZAÇÕES DE PODAS</a>
-
-                        <a href="arquivo/REQUERIMENTO PARA CORTE E PODA.pdf" download="REQUERIMENTO PARA CORTE E PORDA" target="_blank">AUTORIZAÇÕES DE REMOÇÃO DE ÁRVORES</a>
-                        
-                        <a href="transporte.html">GUIA DE TRANSPORTE DE MADEIRA</a>
-                    </div>
-                </li>
-                <li>
-                    <a href="#">ACESSO À INFORMAÇÃO</a>
+                <li class="nav-item1">                  
+                    <img src="telefone-logo.png" alt="telefone-logo" width="50px">
                 </li>
             </ul>
         </div>
-    </section>   
-    
+
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item">
+                        <a href="#">PUBLICAÇÕES</a>
+                    </li>
+                    <li class="nav-item">
+                        <div>                          
+                            <a href="tranparencia.html">ACESSO À INFORMAÇÃO</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+    </section>  
+    <!--JavaScript-->
+    <script src="script.js"></script>
+
     <main>
-        <div>
-            <h2>DEFESA CIVIL</h2>
-            <P>
-                A Defesa Civil desempenha um papel importante na proteção do meio ambiente, especialmente no contexto de desastres naturais e eventos extremos. Suas responsabilidades incluem a prevenção, o monitoramento e a resposta a situações de risco ambiental, como enchentes, deslizamentos, secas e incendios florestais. Além de agir em emergências, a Defesa Civil colabora na elaboração de planos de prevenção a mitigação de desastres, garantindo que as comunidades estejam preparadas e que os impactos ao meio ambiente sejam minimizados. Ela também atua em conjunto com outros órgãos para recuperar àreas afetadas e promover a conscientização sobre riscos ambientes.
-            </P>
+        <div class="botoes">
+            <div  class="menu2">
+                <nav  class="botoes-nav">
+                    <div class="face">
+                        <ul>
+                            <li>
+                                <a href="index.html">INÍCIO</a>
+                            </li>
+                            <li class="menu2-hover">
+                                <a href="#">INSTITUCIONAL</a>
+                                <div class="menu2-drop">
+                                    <a href="quem-somos.html">QUEM SOMOS?</a>
+                                    <a href="civil.html">DEFESA CIVIL DO MUNICÍPIO</a>
+                                    <a href="ORGANOGRAMA.pdf" target="_blank">ORGANOGRAMA</a>
+                                    <a href="https://www.planalto.gov.br/ccivil_03/leis/l6938.htm#:~:text=LEI%20N%C2%BA%206.938%2C%20DE%2031%20DE%20AGOSTO%20">LEIS</a>
+                                    <a href="https://www.ipaam.am.gov.br/" target="_blank">IPAAM</a>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <a href="#">PUBLICAÇÕES</a>
+                            </li>
+                            <li class="menu2-hover">
+                                <div class="n-item">
+                                    <a href="#">SERVIÇOS</a>
+                                    <div class="menu2-dro">
+                                            <a href="arquivo/REQUERIMENTO PARA CORTE E PODA.pdf" download="REQUERIMENTO PARA CORTE E PORDA" target="_blank">ARBORIZAÇÃO</a>
+                                            <a href="arquivo/REQUERIMENTO PARA CORTE E PODA.pdf" download="REQUERIMENTO PARA CORTE E PORDA" target="_blank">AUTORIZAÇÕES DE PODAS</a>
+                                            <a href="arquivo/REQUERIMENTO PARA CORTE E PODA.pdf" download="REQUERIMENTO PARA CORTE E PORDA" target="_blank">AUTORIZAÇÕES DE REMOÇÃO DE ÁRVORES</a>
+                                            <a href="arquivo/REQUERIMENTO PARA CORTE E PODA.pdf" download="REQUERIMENTO PARA CORTE E PORDA" target="_blank">GUIA DE TRANSPORTE DE MADEIRA</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <a href="#">ACESSO À INFORMAÇÃO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
+
+        <section>
+            <h2>PORTAL DE INFORMAÇÃO DA SECRETARIA DE MEIO AMBIENTE</h2>
+            <p class="texto">
+                A Secretaria de Meio Ambiente é responsável por planejar, coordenar e executar políticas públicas voltadas à proteção e conservação do meio ambiente. Seu papel inclui a fiscalização de atividades que impactam o ecossistema, o controle da poluição, o manejo sustentável de recursos naturais e a promoção da educação ambiental. Além disso, ela trabalha na implementação de projetos de preservação de áreas verdes e na elaboração de normas que garantam o desenvolvimento sustentável, equilibrando as necedades humanas com a proteção do meio ambiente.
+            </p>
+            <img src="imagem/defsa-cilvil-site/ambiente2.png" alt="">
+        </section>
     </main>
+    <footer class="footer">
+        <div class="div-botton">
+            <button><a href="#">Telefone Para Denúncia</a></button>
+            <button><a href="#">E-mail Para Denúncia</a></button>
+        </div>
+        <div class="texto-footer">
+            <h2>SEMMA</h2>
+            <p>secretaria Municipal de Meio ambiente</p>
+            <p>CEP: 69.870-000</p>
+            <p>Atendimento: 08:00h às 14:00h</p>
+        </div>
+    </footer>
 </body>
 </html>
