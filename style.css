@@ -74,7 +74,7 @@ body{
     text-decoration: none;
     color: black;
     border: 2px solid rgba(0, 0, 0, 0.863);
-    border-radius: 40px;
+    border-radius: 10px;
     padding: 10px;
 }
 
@@ -255,18 +255,14 @@ button{
 }
 
 .nav-item1{
-    display: none;   
-}   
+    display: none;
+    padding: 0 auto;
+} 
 
 .mobile-menu-icon1{
-    display: block;
+    padding: 10px;
 }
-.mobile-menu-icon1 button{
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    margin: 0;
-}
+
 .mobile-menu1 ul{
     display: flex;
     flex-direction: column;
@@ -276,6 +272,7 @@ button{
 }
 
 .mobile-menu1 .nav-item1{
+  
     display: block;
     padding-top: 1.2rem;
 }
