@@ -311,7 +311,7 @@ button{
     display: block;
 }
 
-@media (max-width: 900px){
+@media (max-width: 600px){
     .grid2{
         grid-template-columns: repeat(2, 1fr);
     }
